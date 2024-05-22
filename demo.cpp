@@ -227,3 +227,60 @@ using namespace std;
 // }
 
 //     Functions
+// Funcyions are set of code which performs something for you
+// Functions are used to modularise code
+// Functions are used to increase readablity
+// Functions are used to  tun same code multiple times
+// Void ==> which  does not returns anything
+// return
+// parameterised
+// non parameterised
+
+// void printName(string name)
+// {
+//     cout << "Hey" << " " << name << endl;
+// }
+// int main()
+// {
+//     string name;
+//     cin >> name;
+//     printName(name);
+// }
+
+// Question - Take two number prints its sum ?
+
+// int addNumber(int num1, int num2)
+// {
+//     int sum = num1 + num2;
+//     return sum;
+// }
+//  Having int as a datatype function should definitely return something
+// int main()
+// {
+//     int num1, num2;
+//     cin >> num1 >> num2;
+//     // int res = addNumber(num1, num2);
+//     // Some in built function
+//     int maximun = max(num1, num2);
+//     cout << maximun;
+//     return 0;
+//  }
+
+// Pass by value
+// here it will take the copy and do commputation with copy
+void doSomething(int num1)
+// if we write as  &num1 in this way we are passing by reference ,I mean we are passing the moemorey refernce of the place .
+{
+    cout << num1 << endl;
+    num1 += 10;
+    cout << num1 << endl;
+    num1 += 10;
+    cout << num1 << endl;
+}
+int main()
+{
+    int num1 = 11;
+    doSomething(num1);    // it is sending copy there
+    cout << num1 << endl; // it doing acc to original num passed
+    return 0;
+}
