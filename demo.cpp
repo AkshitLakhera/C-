@@ -192,8 +192,8 @@ for 2 prinnt Tuesday and so on 7 print Sunday */
 // }
 
 // For loops
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 // int main()
 // {
 //     for (int i = 0; i < 5; i++)
@@ -268,19 +268,19 @@ using namespace std;
 
 // Pass by value
 // here it will take the copy and do commputation with copy
-void doSomething(int num1)
-// if we write as  &num1 in this way we are passing by reference ,I mean we are passing the moemorey refernce of the place .
-{
-    cout << num1 << endl;
-    num1 += 10;
-    cout << num1 << endl;
-    num1 += 10;
-    cout << num1 << endl;
-}
-int main()
-{
-    int num1 = 11;
-    doSomething(num1);    // it is sending copy there
-    cout << num1 << endl; // it doing acc to original num passed
-    return 0;
-}
+// void doSomething(int num1)
+// // if we write as  &num1 in this way we are passing by reference ,I mean we are passing the moemorey refernce of the place .
+// {
+//     cout << num1 << endl;
+//     num1 += 10;
+//     cout << num1 << endl;
+//     num1 += 10;
+//     cout << num1 << endl;
+// }
+// int main()
+// {
+//     int num1 = 11;
+//     doSomething(num1);    // it is sending copy there
+//     cout << num1 << endl; // it doing acc to original num passed
+//     return 0;
+// }
